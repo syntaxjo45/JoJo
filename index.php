@@ -63,8 +63,7 @@
     <script src="https://kit.fontawesome.com/443e00f667.js" crossorigin="anonymous"></script>
 
   </head>
-    
-
+  
   <body>
     <main class="main" id="top">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
