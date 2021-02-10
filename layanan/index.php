@@ -418,31 +418,126 @@
 </section>
     <div class="container">
 	<div class="row">
-		<div class="MultiCarousel" data-items="1,3,5,2" data-slide="1" id="MultiCarousel"  data-interval="1000">
+		<div class="MultiCarousel" data-items="1,3,5,4" data-slide="1" id="MultiCarousel"  data-interval="1000">
             <div class="MultiCarousel-inner" style="text-align: center;">
                 <div class="item">
                     <div class="pad90">
-                        <img src="../assets/img/finpay.png">
+                        <img src="../assets/img/bakerzin.jpg">
                     </div>
                 </div>
                 <div class="item">
                     <div class="pad90">
-                       <img src="../assets/img/brite.png">
+                       <img src="../assets/img/bakmigm.jpg" width="200px" style="padding-top: 20px;">
                     </div>
                 </div>
                 <div class="item">
                     <div class="pad90">
-                    <img src="../assets/img/simas.png">
+                    <img src="../assets/img/chatime.jpg">
                     </div>
                 </div>
                 <div class="item">
                     <div class="pad90">
-                    <img src="../assets/img/atris.png">
+                    <img src="../assets/img/guess.jpg">
                     </div>
                 </div>
                 <div class="item">
                     <div class="pad90">
-                    <img src="../assets/img/ultra.png">
+                    <img src="../assets/img/hnm.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad90">
+                    <img src="../assets/img/indomaret.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad90">
+                    <img src="../assets/img/kimukatsu.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad90">
+                    <img src="../assets/img/kintan.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad90">
+                    <img src="../assets/img/masterwok.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad90">
+                    <img src="../assets/img/nudles.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad90">
+                    <img src="../assets/img/onokabe.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad90">
+                    <img src="../assets/img/paradise.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad90">
+                    <img src="../assets/img/pepper.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad90">
+                    <img src="../assets/img/posh.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad90">
+                    <img src="../assets/img/ptgilang.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad90">
+                    <img src="../assets/img/putumade.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad90">
+                    <img src="../assets/img/senza.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad90">
+                    <img src="../assets/img/shaburi.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad90">
+                    <img src="../assets/img/superdry.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad90">
+                    <img src="../assets/img/tokopedia.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad90">
+                    <img src="../assets/img/transmart.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad90">
+                    <img src="../assets/img/vnc.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad90">
+                    <img src="../assets/img/we.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad90">
+                    <img src="../assets/img/wz.jpg">
                     </div>
                 </div>
             </div>
