@@ -381,8 +381,7 @@
 
 function TestSweetAlert(){
         Swal.fire({
-      title: 'Top Mentor Titanium',
-      html: '<br/><div class="frameatas"><iframe class="responsive-frameatas align-center" src="https://mobapp.vave.co.id/contest_februari.php"></iframe></div>',
+      html: '<div style="text-align: left; padding-left: 7px; font-weight: bold; font-size: 1.5em;">Top Mentor Titanium</div><br/><div class="frameatas"><iframe class="responsive-frameatas align-center" src="https://mobapp.vave.co.id/contest_februari.php"></iframe></div>',
       showCloseButton: true,
       showConfirmButton: false,
       customClass: 'swal-wide',

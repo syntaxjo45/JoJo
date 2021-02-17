@@ -61,7 +61,34 @@
 		    padding: 10px 18px;
 		    margin: 0;
 		}
+    .swal-wide{
+    width:850px !important;
     
+}
+
+.frameatas {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.responsive-frameatas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
     </style>
     <!-- end of footer src -->
 
@@ -290,8 +317,7 @@
 
     function TestSweetAlert(){
       Swal.fire({
-      title: 'Top Mentor Titanium',
-      html: '<br/><div class="frameatas"><iframe class="responsive-frameatas align-center" src="https://mobapp.vave.co.id/contest_februari.php"></iframe></div>',
+      html: '<div style="text-align: left; font-weight: bold; font-size: 1.5em;">Top Mentor Titanium</div><br/><div class="frameatas"><iframe class="responsive-frameatas align-center" src="https://mobapp.vave.co.id/contest_februari.php"></iframe></div>',
       showCloseButton: true,
       showConfirmButton: false,
       customClass: 'swal-wide',
