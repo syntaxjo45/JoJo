@@ -6,13 +6,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <title>Layanan | Vave Global</title>
+    <title>Pusat Bantuan | Vave Global</title>
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/logo.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/logo.png">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo.png">
     <link rel="manifest" href="../assets/img/favicons/manifest.json">
     <meta name="msapplication-TileImage" content="../assets/img/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
     <meta name="theme-color" content="#ffffff">
     
@@ -245,35 +246,16 @@
             margin-bottom: 25px; 
         }
     }
-    .swal-wide{
-    width:850px !important; 
-    }
-    .frameatas {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.responsive-frameatas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
     </style>
     <style>
+    .no-copy p {
+        -webkit-user-select: none;  /* Chrome all / Safari all */
+        -moz-user-select: none;     /* Firefox all */
+        -ms-user-select: none;      /* IE 10+ */
+        user-select: none;          /* Likely future */     
+
+    }
 .tooltip {
   position: relative;
   display: inline-block;
@@ -312,19 +294,94 @@
   visibility: visible;
   opacity: 1;
 }
+
+.cd-dropdown ul {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+
+.cd-dropdown > span,
+.cd-dropdown ul li {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.cd-dropdown ul li {
+	position: absolute;
+	width: 100%;
+	pointer-events: none;
+}
+
+.cd-active.cd-dropdown > span {
+	color: #e66b20;
+}
+
+.cd-active.cd-dropdown ul li {
+	pointer-events: auto;
+}
+
+.cd-active.cd-dropdown ul li span {
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	transition: all 0.2s linear 0s;
+}
+
+.cd-active.cd-dropdown ul li span:hover {
+	background: #e66b20;
+	color: #fff;
+}
+
+.swal-wide{
+    width:850px !important;
+    
+}
+
+.frameatas {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.responsive-frameatas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 </style>
+    
     <!-- end of footer src -->
 
     <!-- Library Google -->
     <link href="../assets/css/theme.css" rel="stylesheet" />
     <link href="../assets/css/program.css" rel="stylesheet" />
+    <link href="../assets/css/bantuan.css" rel="stylesheet" />
     <link href="../assets/css/flip-jo.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/443e00f667.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/accordion.css" rel="stylesheet" />
+    <link href="../assets/css/popup.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/443e00f667.js" crossorigin="anonymous"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-
+    <script>
+      $(document).ready(function(){
+        $("#myModal").modal('show');
+      });
+    </script>
   </head>
     
 
@@ -337,338 +394,173 @@
             <ul class="navbar-nav me-auto ms-lg-4 ms-xl-7 border-bottom border-lg-bottom-0 pt-2 pt-lg-0">
               <li class="nav-item"><a class="nav-link fw-bold" href="../index.php">Home</a></li>
               <li class="nav-item"><a class="nav-link fw-bold" href="../about-us">Tentang Kami</a></li>
-              <li class="nav-item"><a class="nav-link fw-bold active" aria-current="page" href="../layanan">Layanan Kami</a></li>
-              <li class="nav-item"><a class="nav-link fw-bold" href="../bantuan">Pusat Bantuan</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold" href="../layanan">Layanan Kami</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold active" aria-current="page" href="../help">Pusat Bantuan</a></li>
             </ul>
-            <form style="text-align: center;"><a class="btn btn-light rounded-pill shadow fw-bold" id="testeSWAL" role="button"> <li class="fa fa-button"></li><i class="fas fa-trophy"></i> Top Mentor Titanium
+            <form style="text-align: center;"><a class="btn btn-light rounded-pill shadow fw-bold first" id="testeSWAL" role="button"> <li class="fa fa-button"></li><i class="fas fa-trophy"></i> Top Mentor Titanium
               <svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#79bb86" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
               </svg></a></form>
           </div>
         </div>
       </nav>
-
-
-      
+  
 
       <section class="py-6">
         <div class="container">
           <div class="row">
             <div class="col-12">
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      
-      <div class="demo">
-        <div class="container">
-        <div class="row flex-center mb-5">
+            <div class="row flex-center mb-5">
             <div class="col-auto text-center my-4">
-              <h1 class="mb-4 fw-bold">Member</h1>
-              <p>Pilih Keanggotaan Komunitas Belanja Anda Dan Dapatkan Cashback Berbaginya</p>
+              <h1 class="mb-4 fw-bold">Pusat Bantuan</h1>
+              <p><i class="fas fa-question-circle fa-2x"></i></p>
             </div>
           </div>  
-
-            <div class="row">
-                <div class="col-sm">
-                    <div class="pricingTable" style="border-radius: 15px;">
-                        <div class="pricingTable-header">
-                            <h3 class="heading">Silver</h3>
-                            <div class="price-value">
-                            Gratis
-                            </div>
-                            <p></p>
-                        </div>
-                        <ul class="pricing-content" style="height: 285px;">
-                            <li>Tidak Dapat Mereferensikan Member Dan Merchant</li>
-                            <li>Cashback Pribadi</li>
-                            <li>Cashback Global Share Nasional</li>
-                            <li>Dapat Upgrade</li>
-                        </ul>
-                    </div>
+                <div class="row g-0 align-items-center" style="margin: 5%;">
+                  <div class="col-sm text-center text-md-center">
+                  <img src="../assets/img/adress.png"></img>
+                <br/>
+                <h3 style="font-type: bold; font-family: Times New Roman;">
+                Alamat Kantor
+                </h3>
+                <p>
+                Griya Bakoel Rollas
+                Jl. Taman Bintaro Raya no 8
+                Jakarta Selatan - Indonesia
+                </p>
+                </div>
+       
+                  <div class="col-sm text-center text-md-center">
+                  <img src="../assets/img/whatsapp.png"></img>
+                  <br/>
+                <h3 style="font-type: bold; font-family: Times New Roman;">
+                WA Only
+                </h3>
+                <a href="https://wa.me/621282006797/?text=Halo,Saya Membutuhkan Bantuan Penjelasan Mengenai Member Terima kasih"><p>Member : +62 896 0409 4949</p></a>
                 </div>
 
-                <div class="col-sm">
-                    <div class="pricingTable" style="border-radius: 15px;">
-                        <div class="pricingTable-header">
-                            <h3 class="heading">Gold</h3>
-                            <div class="price-value">
-                            27.500
-                            </div>
-                            /2
-                        </div>
-                        <ul class="pricing-content">
-                            <li>Dapat Mereferensikan Member Dan Merchant</li>
-                            <li>Cashback Pribadi</li>
-                            <li>Cashback Global Share Nasional</li>
-                            <li>Dapat Upgrade</li>
-                            <li>Fee Referensi Merchant 2%</li>
-                            <li>Level 5</li>
-                        </ul>
-                    </div>
+                <div class="col-sm text-center text-md-center">
+                <img src="../assets/img/email.png"></img>
+                <br/>
+                <h3 style="font-type: bold; font-family: Times New Roman;">
+                E-Mail
+                </h3>
+                <p>member@vave.co.id<br/>merchant@vave.co.id</p>
+
                 </div>
 
-                <div class="col-sm">
-                    <div class="pricingTable" style="border-radius: 15px;">
-                        <div class="pricingTable-header">
-                            <h3 class="heading">Platinum</h3>
-                            <div class="price-value">
-                            110.000
-                            </div>
-                            /730 Hari
-                        </div>
-                        <ul class="pricing-content">
-                            <li>Dapat Mereferensikan Member Dan Merchant</li>
-                            <li>Cashback Pribadi</li>
-                            <li>Cashback Global Share Nasional</li>
-                            <li>Dapat Upgrade</li>
-                            <li>Fee Referensi Merchant 4%</li>
-                            <li>Level 10</li>
-                        </ul>
-                    </div>
-                </div>
-
-
-                <div class="col-sm">
-                    <div class="pricingTable" style="border-radius: 15px;">
-                        <div class="pricingTable-header">
-                            <h3 class="heading">Titanium</h3>
-                            <div class="price-value">
-                            275.000
-                            </div>
-                            /730 Hari
-                        </div>
-                        <ul class="pricing-content">
-                            <li>Dapat Mereferensikan Member Dan Merchant</li>
-                            <li>Cashback Pribadi</li>
-                            <li>Cashback Global Share Nasional</li>
-                            <li>Dapat Upgrade</li>
-                            <li>Fee Referensi Merchant 6%</li>
-                            <li>Level 25</li>
-                        </ul>
-                    </div>
-                </div>
 
             </div>
-        </div>
-    </div>
 
-      
-    <section class="py-6">
+
+          </div>
+        </div>
+
+      </section>
+
+
+
+      <section class="py-6">
         <div class="container">
           <div class="row">
             <div class="col-12">
-            <div class="row flex-center mb-5">
+            <div class="row flex-center">
             <div class="col-auto text-center my-4">
-            <i class="fas fa-store fa-2x"></i>
-              <h1 class="mb-4 fw-bold">Merchant</h1>
-              <p> Para Pemilik Usaha Produk Atau Jasa Dari Berbagai Kategori Dapat Memasang Iklan Bersama Kami </p>
+              <h1 class="mb-4 fw-bold">FAQ</h1>
+              <p>Pertanyaan Seputar Member Dan Merchant</p>
             </div>
           </div>  
+                <div class="row g-0 align-items-center">
+                <div class="align-items-center">
+                <center>
+                <a class="btn btn-light rounded-pill shadow fw-bold" href="https://vaveglobal.zendesk.com/hc/id" role="button">Lebih detail
+                <svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#79bb86" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                </svg></a>
+                </center>
+                </div>
+                </div>
+
             </div>
+
+
           </div>
+        </div>
+
+      </section>
+
+      <section class="Accordion" >
+      <div class="container">
+          <div class="row">
+            <div class="col-12">
+            <div class="row flex-center">
+        <ul class="Accordion__tabs">
+          <li class="Accordion__tab" onclick="toggleAccordion(this)">
+            <div class="Accordion__tab__headline">
+              <h5 style="margin-left: 25px;"><b>Apa Syarat Menjadi Member ?</b></h5><span class="icon"></span>
+            </div>
+            <div class="Accordion__tab__content">
+              <div class="wrapper">
+                <ul>
+                <li style="list-style: none;"><b>1. Minimal berusia 17 tahun atau sudah memiliki KTP</li>
+                <li style="list-style: none;">2. Satu Nomor Handphone untuk satu Akun yang dapat di validasi</li>
+                <li style="list-style: none;">3. Mengisi formulir pendaftaran online Member baru dengan keterangan yang valid dan benar</li>
+                <li style="list-style: none;">4. Memiliki alamat domisili yang jelas.</li>
+                <li style="list-style: none;">5. Memiliki Nomor Rekening Bank yang valid dan aktif.</li>
+                <li style="list-style: none;">6. Menyertakan Nomor Pokok Wajib Pajak (NPWP).</li>
+                <li style="list-style: none;">7. Member yang tidak menginformasikan NPWP pribadi/suaminya akan dikenakan pemotongan Pajak Penghasilan sebesar 120% dari ketentuan perpajakan bila yang bersangkutan memiliki NPWP.</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="Accordion__tab" onclick="toggleAccordion(this)">
+            <div class="Accordion__tab__headline">
+            <h5 style="margin-left: 25px;"><b>Apa Syarat Menjadi Merchant ?</b></h5><span class="icon"></span>
+            </div>
+            <div class="Accordion__tab__content">
+              <div class="wrapper">
+                <ul>
+                <li style="list-style: none;"><b>1. Menjadi MEMBER VAVE</li>
+                <li style="list-style: none;">2. Mengisi formulir pendaftaran online MERCHANT dengan keterangan yang valid dan benar</li>
+                <li style="list-style: none;">3. Memiliki Usaha baik Jasa maupun Barang yang dapat di Perjual belikan yang tidak melanggar hukum</li>
+                <li style="list-style: none;">4. Memiliki Nomor Rekening Bank yang valid dan aktif.</li>
+                <li style="list-style: none;">5. Menyertakan Nomor Pokok Wajib Pajak (NPWP).</li>
+                <li style="list-style: none;">6. Merchant yang tidak menginformasikan NPWP akan dikenakan pemotongan Pajak Penghasilan lebih besar sesuai ketentuan perpajakan bila yang bersangkutan memiliki NPWP.</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="Accordion__tab" onclick="toggleAccordion(this)">
+            <div class="Accordion__tab__headline">
+            <h5 style="margin-left: 25px;"><b>Apa Keuntungan Menjadi Member?</b></h5><span class="icon"></span>
+            </div>
+            <div class="Accordion__tab__content">
+              <div class="wrapper">
+                <p>Mendapatkan Poin Cashback Dari Setiap Pengeluaran Kebutuhan Terus Menurus Sehingga Bisa Menjadi Penghasilan</p>
+              </div>
+            </div>
+          </li>
+          <li class="Accordion__tab" onclick="toggleAccordion(this)">
+            <div class="Accordion__tab__headline">
+            <h5 style="margin-left: 25px;"><b>Apa Keuntungan Menjadi Merchant ?</b></h5><span class="icon"></span>
+            </div>
+            <div class="Accordion__tab__content">
+              <div class="wrapper">
+                <p>Mendapat Fasilitas Iklan Gratis, Mendapatkan Brand Awareness, Loyal Costumer Dan Cashback</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        </div>
+        </div>
+        </div>
         </div>
       </section>
 
-  
-
-      <section>
-    <div class="container py-5">
-    <div class="row flex-center mb-5">
-            <div class="col-auto text-center my-4">
-              <h1 class="fw-bold">Program Belanja</h1>
-              <button class="btn btn-light rounded-pill shadow fw-bold first">?</button>
-            </div>
-          </div>  
-      <div class="row no-gutters">
-      <div class="col-sm">
-            <div class="flipper">
-              <div class="flipper-card">
-                <div class="flipper-back">
-                <h4 style="font-weight: bold;">VEVO</h4>
-                <p style="bold">Program UMKM Dengan berbagai Kategori Yang Pembayarannya Dengan Scan QR Code</p>
-                </div>
-                <div class="flipper-front" style="background-image:url(../assets/img/qrvave-fix.png);background-position:center;background-size:cover;"></div>
-              </div>
-            </div>
-
-          </div>
-
-          
-          <div class="col-sm">
-
-            <div class="flipper">
-              <div class="flipper-card">
-                <div class="flipper-back">
-                <h4 style="font-weight: bold;">EVOUCHER</h4>
-                <p style="bold">Program Belanja Yang Pembayaran Menggunakan Evoucher Merchant Dengan Ribuan Outlet Seluruh Indonesia</p>
-                </div>
-                <div class="flipper-front" style="background-image:url(../assets/img/evoucher-fix3.png);background-position:center;background-size:cover;"></div>
-              </div>
-            </div>
-
-          </div>
-          
-          <div class="col-sm">
-
-            <div class="flipper">
-              <div class="flipper-card">
-                <div class="flipper-back">
-                <h4 style="font-weight: bold;">
-                PPOB
-                </h4>
-                <p>Program Pembayaran Untuk Semua Tagihan Seperti Listrik,Air,Pulsa,Paket Data Dan Lain-lain</p>
-                <br/>
-                </div>
-                <div class="flipper-front"  style="background-image:url(../assets/img/ppobfix.png);background-position:center;background-size:cover;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-  </div>
-</section>
-
-
-
 
       
-  <div class="container">
-  <div class="row flex-center mb-5">
-            <div class="col-auto text-center my-4">
-              <h1 class="mb-4 fw-bold">Merchant E-Voucher</h1>
-              <p><i class="fas fa-handshake fa-2x"></i></p> 
-            </div>
-          </div>
-	<div class="row">
-		<div class="MultiCarousel" data-items="1,3,5,4" data-slide="1" id="MultiCarousel"  data-interval="1000">
-            <div class="MultiCarousel-inner" style="text-align: center;">
-                <div class="item">
-                    <div class="pad90">
-                        <img src="../assets/img/bakerzin.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                       <img src="../assets/img/bakmigm.jpg" width="200px" style="padding-top: 20px;">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/chatime.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/guess.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/hnm.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/indomaret.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/kimukatsu.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/kintan.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/masterwok.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/nudles.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/onokabe.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/paradise.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/pepper.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/posh.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/ptgilang.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/putumade.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/senza.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/shaburi.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/superdry.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/tokopedia.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/transmart.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/vnc.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/we.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad90">
-                    <img src="../assets/img/wz.jpg">
-                    </div>
-                </div>
-            </div>
-            <button class="btn btn-primary leftLst"><</button>
-            <button class="btn btn-primary rightLst">></button>
-        </div>
-	</div>
+
+
       <section class="py-6 pb-0">
 
         <div class="container">
@@ -720,6 +612,8 @@
     
 
     </main>
+
+    
     <div class="footer">
 			<p style="font-size: 1.75vh; color: black;">© 2021 - Vaveglobal | Adalah Merek Milik PT Vave Global Madani</p>
 		  </div>
@@ -852,39 +746,8 @@
 
       });
 
-      // sweet alert
-      document.querySelector(".first").addEventListener('click', function(){
-        let timerInterval
-        Swal.fire({
-          html: '<h5 style="font-size: 0.8em;">Klik Gambar Untuk Info Lebih Lengkap</h5>',
-          timer: 5000,
-          timerProgressBar: true,
-          didOpen: () => {
-            Swal.showLoading()
-            timerInterval = setInterval(() => {
-              var content = Swal.getContent()
-              if (content) {
-                var b = content.querySelector('b')
-                if (b) {
-                  b.textContent = Swal.getTimerLeft()
-                }
-              }
-            }, 100)
-          },
-          willClose: () => {
-            clearInterval(timerInterval)
-          }
-        }).then((result) => {
-          /* Read more about handling dismissals below */
-          if (result.dismiss === Swal.DismissReason.timer) {
-            console.log('I was closed by the timer')
-          }
-        })
-      });
-
-
       function TestSweetAlert(){
-      Swal.fire({
+        Swal.fire({
       title: 'Top Mentor Titanium',
       html: '<br/><div class="frameatas"><iframe class="responsive-frameatas align-center" src="https://mobapp.vave.co.id/contest_februari.php"></iframe></div>',
       showCloseButton: true,
@@ -897,7 +760,43 @@
       $('#testeSWAL').on("click",TestSweetAlert);
 
       </script>
+      <script>
+        var elementOld = null;
+        var openClass = "Accordion__tab--open";
+
+        function toggleAccordion(element) {
+            content = element.querySelector(".Accordion__tab__content");
+
+            if(elementOld != null){
+                elementOld.classList.remove(openClass);
+                contentOld = elementOld.querySelector(".Accordion__tab__content");
+                contentOld.style.maxHeight = "0px";
+            }
+
+            if(elementOld !== element){
+                element.classList.add(openClass);
+                content.style.maxHeight = content.scrollHeight + "px";
+                elementOld = element;
+            }else{
+                elementOld = null;
+            }
+        }
+
+
+        $('#yt').fadeIn();
+
+        $(".popup-btn").click(function () {
+                    var target = $(this).attr("href");
+                    $(target).fadeIn();
+        });
+        
+        $(".popup .close").click(function () {
+                    $(".popup").fadeOut();
+        });
+        
+
+        </script>
+
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,700;1,900&amp;display=swap" rel="stylesheet">
   </body>
-
 </html>

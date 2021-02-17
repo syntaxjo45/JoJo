@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <title>VAVE GLOBAL</title>
+    <title>Tentang Kami | Vave Global</title>
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/logo.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/logo.png">
@@ -14,7 +14,6 @@
     <link rel="manifest" href="../assets/img/favicons/manifest.json">
     <meta name="msapplication-TileImage" content="../assets/img/logo.png">
     <meta name="theme-color" content="#ffffff">
-    
     <!-- footer src -->
     <style>
     
@@ -62,7 +61,34 @@
       color: white;
       text-align: center;
     } 
+    .swal-wide{
+    width:850px !important;
     
+}
+
+.frameatas {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.responsive-frameatas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
     </style>
     <!-- end of footer src -->
 
@@ -71,6 +97,7 @@
     <script src="https://kit.fontawesome.com/443e00f667.js" crossorigin="anonymous"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   </head>
     
 
@@ -83,10 +110,10 @@
             <ul class="navbar-nav me-auto ms-lg-4 ms-xl-7 border-bottom border-lg-bottom-0 pt-2 pt-lg-0">
               <li class="nav-item"><a class="nav-link fw-bold" href="../index.php">Home</a></li>
               <li class="nav-item"><a class="nav-link fw-bold active" aria-current="page" href="#">Tentang Kami</a></li>
-              <li class="nav-item"><a class="nav-link fw-medium" href="../layanan">Layanan Kami</a></li>
-              <li class="nav-item"><a class="nav-link fw-medium" href="../help">Pusat Bantuan</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold" href="../layanan">Layanan Kami</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold" href="../bantuan">Pusat Bantuan</a></li>
             </ul>
-            <form style="text-align: center;"><a class="btn btn-light rounded-pill shadow fw-bold" href="#" role="button"> <li class="fa fa-button"></li><i class="fas fa-trophy"></i> Top Mentor Titanium
+            <form style="text-align: center;"><a class="btn btn-light rounded-pill shadow fw-bold" id="testeSWAL" role="button"> <li class="fa fa-button"></li><i class="fas fa-trophy"></i> Top Mentor Titanium
               <svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#79bb86" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
               </svg></a></form>
@@ -189,14 +216,14 @@
             <div class="col-6 col-sm-4 col-lg-3 mb-3 order-2 order-sm-1">
               <h6 class="lh-lg fw-bold mb-4">Home</h6>
               <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Tentang Kami</a></li>
-                <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Layanan Kami</a></li>
+                <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="../about-us">Tentang Kami</a></li>
+                <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="../layanan">Layanan Kami</a></li>
               </ul>
             </div>
             <div class="col-6 col-sm-4 col-lg-3 mb-3 order-3 order-sm-2">
               <h6 class="lh-lg fw-bold mb-4"> Help </h6>
               <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Pusat Bantuan</a></li>
+                <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="../bantuan">Pusat Bantuan</a></li>
                
               </ul>
               
@@ -204,8 +231,8 @@
             <div class="col-12 col-sm-4 col-lg-3 mb-3 order-1 order-sm-3">
               <h6 class="lh-lg fw-bold mb-4">Unduh </h6>
               <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="list-inline-item"><a class="text-dark fs--1 text-decoration-none" href="#!"><img class="img-fluid" src="../assets/img/icons/banner-appstore.png" width="100" alt="" /></a></li>
-                <li class="list-inline-item"><a class="text-dark fs--1 text-decoration-none" href="#!"><img class="img-fluid" src="../assets/img/icons/banner-playstore.png" width="100" alt="" /></a></li>
+                <li class="list-inline-item"><a class="text-dark fs--1 text-decoration-none" href="https://apps.apple.com/id/app/vave-global/id1453493174"><img class="img-fluid" src="../assets/img/icons/banner-appstore.png" width="100" alt="" /></a></li>
+                <li class="list-inline-item"><a class="text-dark fs--1 text-decoration-none" href="https://play.google.com/store/apps/details?id=id.co.vave.mob"><img class="img-fluid" src="../assets/img/icons/banner-playstore.png" width="100" alt="" /></a></li>
               </ul>
               <br/>
               <h6 class="lh-lg fw-bold mb-4">Social Media </h6>
@@ -221,15 +248,16 @@
       </section>
       
   
-      <div class="footer">
-			<p style="font-size: 1.75vh; color: black;">© 2021 - Vaveglobal | Adalah Merek Milik PT Vave Global Madani</p>
-		  </div>
+    
 
 
       
     
 
     </main>
+    <div class="footer">
+			<p style="font-size: 1.75vh; color: black;">© 2021 - Vaveglobal | Adalah Merek Milik PT Vave Global Madani</p>
+		  </div>
     <!-- end of source -->
     <button id="back2top"><img src="../assets/img/arrow-up.png"></img></button>
     <script src="../assets/js/back2top.min.js"></script>
@@ -350,6 +378,20 @@
     }
 
 });
+
+function TestSweetAlert(){
+        Swal.fire({
+      title: 'Top Mentor Titanium',
+      html: '<br/><div class="frameatas"><iframe class="responsive-frameatas align-center" src="https://mobapp.vave.co.id/contest_februari.php"></iframe></div>',
+      showCloseButton: true,
+      showConfirmButton: false,
+      customClass: 'swal-wide',
+      focusConfirm: false,
+      })
+      };
+
+      $('#testeSWAL').on("click",TestSweetAlert);
+
   </script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,700;1,900&amp;display=swap" rel="stylesheet">
   </body>

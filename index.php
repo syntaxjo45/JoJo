@@ -9,7 +9,7 @@
 
 
     
-    <title>VAVE GLOBAL</title>
+    <title>Dashboard | Vave Global</title>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logo.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo.png">
@@ -17,6 +17,12 @@
     <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="msapplication-TileImage" content="assets/img/logo.png">
     <meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/443e00f667.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
     <!-- footer src -->
     <style>
     .footer {
@@ -55,6 +61,7 @@
 		    padding: 10px 18px;
 		    margin: 0;
 		}
+    
     </style>
     <!-- end of footer src -->
 
@@ -72,11 +79,11 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto ms-lg-4 ms-xl-7 border-bottom border-lg-bottom-0 pt-2 pt-lg-0">
               <li class="nav-item"><a class="nav-link fw-bold active" aria-current="page" href="#">Home</a></li>
-              <li class="nav-item"><a class="nav-link fw-medium" href="about-us/">Tentang Kami</a></li>
-              <li class="nav-item"><a class="nav-link fw-medium" href="layanan/">Layanan Kami</a></li>
-              <li class="nav-item"><a class="nav-link fw-medium" href="help/">Pusat Bantuan</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold" href="about-us/">Tentang Kami</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold" href="layanan/">Layanan Kami</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold" href="bantuan/">Pusat Bantuan</a></li>
             </ul>
-            <form style="text-align: center;"><a class="btn btn-light rounded-pill shadow fw-bold" href="#" role="button"> <li class="fa fa-button"></li><i class="fas fa-trophy"></i> Top Mentor Titanium
+            <form style="text-align: center;"><a class="btn btn-light rounded-pill shadow fw-bold" id="testeSWAL" role="button"> <li class="fa fa-button"></li><i class="fas fa-trophy"></i> Top Mentor Titanium
               <svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#79bb86" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
               </svg></a></form>
@@ -99,19 +106,23 @@
         </div>
       </section>
 
-      <section class="py-6">
-        <div class="container-lg">
-          <div class="row flex-center mb-5">
+      
+
+      <section>
+    <div class="container py-5">
+    <div class="row flex-center mb-5">
             <div class="col-auto text-center my-4">
-              <h1 class="mb-4 fw-bold">Kenapa harus kami ?</h1>
-              <p style="font-size: 2vh;">Bersama, Kita Membangun Bisnis Berbagi Ekonomi</p>
+              <h1 class="fw-bold">Kenapa harus kami ?</h1>
+            Bersama, Kita Membangun Bisnis Berbagi Ekonomi
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 mb-5">
-              <div class="card px-5 px-md-3 py-lg-5">
+          </div>  
+      <div class="row no-gutters">
+      <div class="col-sm">
+      <div class="row flex-center mb-6" >
+      <div class="col-sm">
+          <div class="card px-5 px-md-3 py-lg-5">
                 <div class="row flex-center">
-                  <div class="bg-holder z-index-1 d-none d-lg-block" style="background-image:url(assets/img/illustrations/feature-bg-1.png);background-position:center;background-size:contain;">
+                <div class="bg-holder z-index-1 d-none d-lg-block" style="background-image:url(assets/img/illustrations/feature-bg-1.png);background-position:center;background-size:contain;">
                   </div>
 
                   <div class="bg-holder z-index-1 d-block d-lg-none" style="background-image:url(assets/img/illustrations/feature-bg-1.png);background-position:center;background-size:cover;">
@@ -120,18 +131,19 @@
                   <div class="col-md-4 pe-0 pe-md-0 text-center"><img class="img-fluid" src="assets/img/illustrations/feature-search.png" alt="" /></div>
                   <div class="col-md-8 ps-md-3 pe-md-2 text-center text-md-start z-index-2">
                     <div class="card-body px-0">
-                      <h4 class="card-title pt-md-5">Inovasi</h4>
+                      <h4 class="card-title pt-md-5">Inovasi </h4>
                       <p class="mb-0" style="font-size: 1em;"> <br class="d-none d-lg-block">Aplikasi Belanja Dengan Program <br class="d-none d-lg-block">Belanja Yang Lengkap Dari Berbagai<br class="d-none d-lg-block"> Kategori Usaha Secara<br class="d-none d-lg-block"> Online Maupun Offline<br class="d-none d-lg-block">Satu Aplikasi Untuk Semua Transaksi</p>
-                      
+
                     </div>
-                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-6 mb-5">
-              <div class="card px-5 px-md-3 py-lg-5">
+  </div>
+          </div>
+          
+          <div class="col-sm" style="margin-top: 7px;">
+          <div class="card px-5 px-md-3 py-lg-5">
                 <div class="row flex-center">
-                  <div class="bg-holder z-index-1 d-none d-lg-block" style="background-image:url(assets/img/illustrations/feature-bg-1.png);background-position:center;background-size:contain;">
+                <div class="bg-holder z-index-1 d-none d-lg-block" style="background-image:url(assets/img/illustrations/feature-bg-1.png);background-position:center;background-size:contain;">
                   </div>
 
                   <div class="bg-holder z-index-1 d-block d-lg-none" style="background-image:url(assets/img/illustrations/feature-bg-1.png);background-position:center;background-size:cover;">
@@ -141,17 +153,16 @@
                   <div class="col-md-8 ps-md-3 pe-md-2 text-center text-md-start z-index-2">
                     <div class="card-body px-0">
                       <h4 class="card-title pt-md-5">Komunitas </h4>
-                      <p class="mb-0" style="font-size: 1em;"> Aplikasi Belanja Yang Memiliki <br class="d-none d-lg-block">Sistem Membangun Komunitas <br class="d-none d-lg-block">Belanja Antara Member Dan <br class="d-none d-lg-block">Merchant<br class="d-none d-lg-block">Dengan Konsep Berbagi Ekonomi</p>
+                      <p class="mb-0" style="font-size: 1em;"> Aplikasi Belanja Yang Memberikan <br class="d-none d-lg-block">Cashback Dari Semua Transaksi <br class="d-none d-lg-block">Antara Member Dan Merchant<br class="d-none d-lg-block">Merubah Pengeluaran <br class="d-none d-lg-block">Menjadi Penghasilan</p>
 
-                    </div>
                   </div>
                 </div>
               </div>
+  </div>
             </div>
-
-            <div class="cashback-center">
-            <div class="col-md-6 mb-5">
-              <div class="card px-5 px-md-3 py-lg-5">
+          
+          <div class="col-sm">
+          <div class="card px-5 px-md-3 py-lg-5">
                 <div class="row flex-center">
                   <div class="bg-holder z-index-1 d-none d-lg-block" style="background-image:url(assets/img/illustrations/feature-bg-1.png);background-position:center;background-size:contain;">
                   </div>
@@ -165,16 +176,17 @@
                       <h4 class="card-title pt-md-5">Cashback </h4>
                       <p class="mb-0" style="font-size: 1em;"> Aplikasi Belanja Yang Memberikan <br class="d-none d-lg-block">Cashback Dari Semua Transaksi <br class="d-none d-lg-block">Antara Member Dan Merchant<br class="d-none d-lg-block">Merubah Pengeluaran <br class="d-none d-lg-block">Menjadi Penghasilan</p>
 
-                    </div>
                   </div>
                 </div>
               </div>
+  </div>
             </div>
-            </div>
-            
-        </div>
-      </section>
-      <section class="py-5">
+          
+          
+
+  </div>
+</section>
+<section class="py-5">
         <div class="container-lg bg-info p-5 p-md-5 p-xl-7 rounded-3">
           <div class="row flex-center">
             <div class="col-12">
@@ -213,8 +225,7 @@
         </div>
       </section>
 
-
-     
+      
       <section class="py-6 pb-0">
 
         <div class="container">
@@ -227,14 +238,14 @@
             <div class="col-6 col-sm-4 col-lg-3 mb-3 order-2 order-sm-1">
               <h6 class="lh-lg fw-bold mb-4">Home</h6>
               <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Tentang Kami</a></li>
-                <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Layanan Kami</a></li>
+                <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="about-us/">Tentang Kami</a></li>
+                <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="layanan/">Layanan Kami</a></li>
               </ul>
             </div>
             <div class="col-6 col-sm-4 col-lg-3 mb-3 order-3 order-sm-2">
               <h6 class="lh-lg fw-bold mb-4"> Help </h6>
               <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="#!">Pusat Bantuan</a></li>
+                <li class="lh-lg"><a class="text-dark fs--1 text-decoration-none" href="bantuan/">Pusat Bantuan</a></li>
                
               </ul>
               
@@ -242,8 +253,8 @@
             <div class="col-12 col-sm-4 col-lg-3 mb-3 order-1 order-sm-3">
               <h6 class="lh-lg fw-bold mb-4">Unduh </h6>
               <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="list-inline-item"><a class="text-dark fs--1 text-decoration-none" href="#!"><img class="img-fluid" src="assets/img/icons/banner-appstore.png" width="100" alt="" /></a></li>
-                <li class="list-inline-item"><a class="text-dark fs--1 text-decoration-none" href="#!"><img class="img-fluid" src="assets/img/icons/banner-playstore.png" width="100" alt="" /></a></li>
+                <li class="list-inline-item"><a class="text-dark fs--1 text-decoration-none" href="https://apps.apple.com/id/app/vave-global/id1453493174"><img class="img-fluid" src="assets/img/icons/banner-appstore.png" width="100" alt="" /></a></li>
+                <li class="list-inline-item"><a class="text-dark fs--1 text-decoration-none" href="https://play.google.com/store/apps/details?id=id.co.vave.mob"><img class="img-fluid" src="assets/img/icons/banner-playstore.png" width="100" alt="" /></a></li>
               </ul>
               <br/>
               <h6 class="lh-lg fw-bold mb-4">Social Media </h6>
@@ -275,6 +286,21 @@
     <script>
     const button = document.querySelector("#back2top");
     BACK2TOP(button, 50);
+
+
+    function TestSweetAlert(){
+      Swal.fire({
+      title: 'Top Mentor Titanium',
+      html: '<br/><div class="frameatas"><iframe class="responsive-frameatas align-center" src="https://mobapp.vave.co.id/contest_februari.php"></iframe></div>',
+      showCloseButton: true,
+      showConfirmButton: false,
+      customClass: 'swal-wide',
+      focusConfirm: false,
+      })
+      };
+
+      $('#testeSWAL').on("click",TestSweetAlert);
+
     </script>	
 
     <script src="vendors/@popperjs/popper.min.js"></script>
