@@ -1,3 +1,19 @@
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+
 
 h1 {
     font-size: 2rem;
@@ -19,6 +35,10 @@ h1 {
     -webkit-perspective: 800px;
     -ms-perspective: 800px;
     perspective: 800px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0px rgba(6,3,6,3.6);
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
   }
   
   @media (min-width: 576px) {
@@ -38,6 +58,7 @@ h1 {
     transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ 
   }
   
   .flipper-front,

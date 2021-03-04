@@ -331,7 +331,7 @@
   <body>
     <main class="main" id="top">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href="#"><img class="img-fluid" src="https://www.vave.co.id/wp-content/uploads/2020/10/cropped-V-icon-192x192.png" alt="" width="30px"/></a>
+      <div class="container"><a class="navbar-brand" href="#"><img class="img-fluid" src="../assets/img/logovave.png" alt="" width="70px"/></a>
           <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto ms-lg-4 ms-xl-7 border-bottom border-lg-bottom-0 pt-2 pt-lg-0">
@@ -349,16 +349,6 @@
       </nav>
 
 
-      
-
-      <section class="py-6">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-            </div>
-          </div>
-        </div>
-      </section>
       
       
       <div class="demo">
@@ -489,7 +479,7 @@
                 <h4 style="font-weight: bold;">VEVO</h4>
                 <p style="bold">Program UMKM Dengan berbagai Kategori Yang Pembayarannya Dengan Scan QR Code</p>
                 </div>
-                <div class="flipper-front" style="background-image:url(../assets/img/qrvave-fix.png);background-position:center;background-size:cover;"></div>
+                <div class="flipper-front" style="background-image:url(../assets/img/illustrations/vevo.svg);background-position:center;background-size:cover;"></div>
               </div>
             </div>
 
@@ -504,7 +494,7 @@
                 <h4 style="font-weight: bold;">EVOUCHER</h4>
                 <p style="bold">Program Belanja Yang Pembayaran Menggunakan Evoucher Merchant Dengan Ribuan Outlet Seluruh Indonesia</p>
                 </div>
-                <div class="flipper-front" style="background-image:url(../assets/img/evoucher-fix3.png);background-position:center;background-size:cover;"></div>
+                <div class="flipper-front" style="background-image:url(../assets/img/illustrations/voucherfix.svg);background-position:center;background-size:cover;"></div>
               </div>
             </div>
 
@@ -521,7 +511,7 @@
                 <p>Program Pembayaran Untuk Semua Tagihan Seperti Listrik,Air,Pulsa,Paket Data Dan Lain-lain</p>
                 <br/>
                 </div>
-                <div class="flipper-front"  style="background-image:url(../assets/img/ppobfix.png);background-position:center;background-size:cover;"></div>
+                <div class="flipper-front"  style="background-image:url(../assets/img/illustrations/ppob.svg);background-position:center;background-size:cover;"></div>
               </div>
             </div>
           </div>

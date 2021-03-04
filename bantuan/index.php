@@ -388,7 +388,7 @@
   <body>
     <main class="main" id="top">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href="#"><img class="img-fluid" src="https://www.vave.co.id/wp-content/uploads/2020/10/cropped-V-icon-192x192.png" alt="" width="30px"/></a>
+      <div class="container"><a class="navbar-brand" href="#"><img class="img-fluid" src="../assets/img/logovave.png" alt="" width="70px"/></a>
           <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto ms-lg-4 ms-xl-7 border-bottom border-lg-bottom-0 pt-2 pt-lg-0">

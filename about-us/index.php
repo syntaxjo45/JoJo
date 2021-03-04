@@ -94,6 +94,7 @@
 
     <!-- Library Google -->
     <link href="../assets/css/theme.css" rel="stylesheet" />
+    <link href="../assets/css/bg.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/443e00f667.js" crossorigin="anonymous"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -104,7 +105,7 @@
   <body>
     <main class="main" id="top">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href="#"><img class="img-fluid" src="https://www.vave.co.id/wp-content/uploads/2020/10/cropped-V-icon-192x192.png" alt="" width="30px"/></a>
+      <div class="container"><a class="navbar-brand" href="#"><img class="img-fluid" src="../assets/img/logovave.png" alt="" width="70px"/></a>
           <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto ms-lg-4 ms-xl-7 border-bottom border-lg-bottom-0 pt-2 pt-lg-0">
@@ -126,15 +127,14 @@
 
       <section class="py-6">
         <div class="container">
-          <div class="row">
+          <div class="row" id="bg">
             <div class="col-12">
             <div class="row flex-center mb-5">
             <div class="col-auto text-center my-4">
-              <h1 class="mb-4 fw-bold">VISI & MISI</h1>
-              <p><i class="fab fa-gratipay fa-2x"></i></p>
+              <h1 class="mb-4 fw-bold" style="background: -webkit-linear-gradient(45deg, #9edddd, #9edddd 80%); -webkit-background-clip: text;     -webkit-text-fill-color: transparent;">VISI & MISI</h1>
             </div>
           </div>  
-              <div class="card mb-3 bg-soft-success rounded-3">
+              <div class="card bg-soft-success rounded-3">
                 <div class="row g-0 align-items-center">
                   <div class="col-md-5 col-lg-6 text-md-center">
                   <br/>
@@ -160,7 +160,7 @@
         <div class="container-lg">
         <div class="row">
             <div class="col-12">
-            <div class="row flex-center mb-5">
+            <div class="row flex-center">
             <div class="col-auto text-center my-4">
               <h1 class="mb-4 fw-bold">Mitra Kami</h1>
               <p><i class="fas fa-handshake fa-2x"></i></p> 
@@ -172,7 +172,7 @@
 </section>
     <div class="container">
 	<div class="row">
-		<div class="MultiCarousel" data-items="1,3,5,2" data-slide="1" id="MultiCarousel"  data-interval="1000">
+		<div class="MultiCarousel" data-items="1,3,5,5" data-slide="1" id="MultiCarousel"  data-interval="1000">
             <div class="MultiCarousel-inner" style="text-align: center;">
                 <div class="item">
                     <div class="pad90">
@@ -210,7 +210,7 @@
           <hr class="text-info opacity-25" />
           <div class="row py-7 justify-content-sm-between text-center text-md-start">
           <div class="row justify-content-lg-around">
-            <div class="col-12 col-sm-12 col-lg-3 mb-4 order-0 order-sm-0"><a class="text-decoration-none" href="#"><img class="img-fluid me-3" src="../assets/img/logo.png" alt="" width="50px"/><span class="fw-bold fs-1 text-1000">VAVE GLOBAL</span></a>
+            <div class="col-12 col-sm-12 col-lg-3 mb-4 order-0 order-sm-0"><a class="text-decoration-none" href="#"><img class="img-fluid me-3" src="../assets/img/logo.png" alt="" width="50px"/><span class="fw-bold fs-1 text-1000" style="background: -webkit-linear-gradient(45deg, #18e09b, #0dc8dd 80%); -webkit-background-clip: text;     -webkit-text-fill-color: transparent;">VAVE GLOBAL</span></a>
               <p class="mt-4">Griya Bakoel Rollas <br/>Jl. Taman Bintaro Raya No 8 <br/>Jakarta Selatan - Indonesia</p>
             </div>
             <div class="col-6 col-sm-4 col-lg-3 mb-3 order-2 order-sm-1">
