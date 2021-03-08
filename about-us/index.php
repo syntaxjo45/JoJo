@@ -95,6 +95,7 @@
     <!-- Library Google -->
     <link href="../assets/css/theme.css" rel="stylesheet" />
     <link href="../assets/css/bg.css" rel="stylesheet" />
+    <link href="../assets/css/bg-res.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/443e00f667.js" crossorigin="anonymous"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -126,14 +127,17 @@
       
 
       <section class="py-6">
-        <div class="container">
-          <div class="row" id="bg">
+        <div class="container-lg">
+          <div class="row">
             <div class="col-12">
             <div class="row flex-center mb-5">
-            <div class="col-auto text-center my-4">
-              <h1 class="mb-4 fw-bold" style="background: -webkit-linear-gradient(45deg, #9edddd, #9edddd 80%); -webkit-background-clip: text;     -webkit-text-fill-color: transparent;">VISI & MISI</h1>
+            <div class="col-md text-center my-4">
+            <div id="bgAbt-Us"></div>
+              <h1 class="mb-4 fw-bold" style="background: -webkit-linear-gradient(45deg, #18e09b, #0dc8dd 85%); -webkit-background-clip: text;     -webkit-text-fill-color: transparent;">VISI & MISI</h1>
             </div>
           </div>  
+          
+
               <div class="card bg-soft-success rounded-3">
                 <div class="row g-0 align-items-center">
                   <div class="col-md-5 col-lg-6 text-md-center">
@@ -381,7 +385,7 @@
 
 function TestSweetAlert(){
         Swal.fire({
-      html: '<div style="text-align: left; padding-left: 7px; font-weight: bold; font-size: 1.5em;">Top Mentor Titanium</div><br/><div class="frameatas"><iframe class="responsive-frameatas align-center" src="https://mobapp.vave.co.id/contest_februari.php"></iframe></div>',
+      html: '<div style="text-align: left; font-weight: bold; font-size: 1.5em;">Top Mentor Titanium</div><br/><div class="frameatas"><iframe class="responsive-frameatas align-center" src="https://mobapp.vave.co.id/contest_februari.php"></iframe></div> <br/> <h1>SYARAT & KETENTUAN:</h1><p> Pemenang No. 1 Sampai 10 (Top 10) Minimum Mentori 5 Orang Titanium / Titanium Star<br/>Grup Member Lama Anda, Yang Upgrade Bulan Ini Ke Titanium / Titanium Star,<br/>Juga Terhitung Dalam Akumulasi Promo Top 10 Mentor<br/>Promo Top 10 Mentor Ini Berakhir Tanggal 28 Februari 2021 Jam 23.59 WIB</p>',
       showCloseButton: true,
       showConfirmButton: false,
       customClass: 'swal-wide',

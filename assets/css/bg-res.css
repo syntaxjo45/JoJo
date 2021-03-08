@@ -1,0 +1,195 @@
+
+
+@media (min-width:320px)  { 
+    @keyframes float {
+        0% {
+            transform: translatey(90%);
+        }
+        
+        25% {
+            transform: translatey(90px);
+        }
+        
+        50%{
+            transform: translatey(10%);
+        }
+        75% {
+            transform: translatey(5%);
+        }
+
+        100% {
+            transform: translatey(40%);
+        }
+
+    
+    }
+
+    #bgAbt-Us{
+        
+        content:url("../img/illustrations/astro.png");
+        position: absolute;
+        float: left;
+        left: 25%;
+        width: 450px;
+        transform: translatey(-100px);
+        animation: float 10s ease-in-out infinite;
+    }
+}
+@media (min-width:481px)  { 
+
+    @keyframes float {
+        0% {
+            transform: translatey(90%);
+        }
+        
+        25% {
+            transform: translatey(90px);
+        }
+        
+        50%{
+            transform: translatey(10%);
+        }
+        75% {
+            transform: translatey(5%);
+        }
+
+        100% {
+            transform: translatey(40%);
+        }
+
+    
+    }
+
+    #bgAbt-Us{
+        
+        content:url("../img/illustrations/astro.png");
+        position: absolute;
+        float: left;
+        left: 25%;
+        width: 450px;
+        transform: translatey(-100px);
+        animation: float 10s ease-in-out infinite;
+    }
+}
+@media (min-width:641px)  { 
+
+    @keyframes float {
+        0% {
+            transform: translatex(-750px);
+        }
+        50% {
+            -webkit-animation-duration: 5s;
+            transform: translatex(75px);
+        }
+
+        75%{
+            -webkit-animation-duration: 5s;
+            transform: translatex(65px);
+        }
+
+        100% {
+            transform: translatex(1250px);
+        }
+    }
+    #bgAbt-Us{
+        content:url("../img/illustrations/astro3.png");
+        position: absolute;
+        float: left;
+        left: 45px;
+        width: 450px;
+        transform: translatey(-100px);
+        animation: float 10s ease-in-out infinite;
+    
+    }
+    
+ }
+@media (min-width:961px)  { 
+    @keyframes float {
+        0% {
+            transform: translatex(-750px);
+        }
+        50% {
+            -webkit-animation-duration: 5s;
+            transform: translatex(75px);
+        }
+
+        75%{
+            -webkit-animation-duration: 5s;
+            transform: translatex(65px);
+        }
+
+        100% {
+            transform: translatex(1250px);
+        }
+    }
+    #bgAbt-Us{
+        content:url("../img/illustrations/astro3.png");
+        position: absolute;
+        float: left;
+        left: 45px;
+        width: 450px;
+        transform: translatey(-100px);
+        animation: float 10s ease-in-out infinite;
+    
+    }
+}
+@media (min-width:1025px) { 
+    @keyframes float {
+        0% {
+            transform: translatex(-750px);
+        }
+        50% {
+            -webkit-animation-duration: 5s;
+            transform: translatex(75px);
+        }
+
+        75%{
+            -webkit-animation-duration: 5s;
+            transform: translatex(65px);
+        }
+
+        100% {
+            transform: translatex(1250px);
+        }
+    }
+    #bgAbt-Us{
+        content:url("../img/illustrations/astro3.png");
+        position: absolute;
+        float: left;
+        left: 45px;
+        width: 450px;
+        transform: translatey(-100px);
+        animation: float 10s ease-in-out infinite;
+    
+    }
+}
+@media (min-width:1281px) {
+    @keyframes float {
+        0% {
+            transform: translatex(-750px);
+        }
+        50% {
+            -webkit-animation-duration: 5s;
+            transform: translatex(75px);
+        }
+
+        75%{
+            -webkit-animation-duration: 5s;
+            transform: translatex(65px);
+        }
+
+        100% {
+            transform: translatex(1250px);
+        }
+    }
+    #bgAbt-Us{
+        content:url("../img/illustrations/astro3.png");
+        position: absolute;
+        float: left;
+        left: 45px;
+        width: 450px;
+        transform: translatey(-100px);
+        animation: float 10s ease-in-out infinite;
+    
+    }
+}

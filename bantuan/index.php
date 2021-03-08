@@ -748,7 +748,7 @@
 
       function TestSweetAlert(){
         Swal.fire({
-      html: '<div style="text-align: left; font-weight: bold; font-size: 1.5em;">Top Mentor Titanium</div><br/><div class="frameatas"><iframe class="responsive-frameatas align-center" src="https://mobapp.vave.co.id/contest_februari.php"></iframe></div>',
+      html: '<div style="text-align: left; font-weight: bold; font-size: 1.5em;">Top Mentor Titanium</div><br/><div class="frameatas"><iframe class="responsive-frameatas align-center" src="https://mobapp.vave.co.id/contest_februari.php"></iframe></div> <br/> <h1>SYARAT & KETENTUAN:</h1><p> Pemenang No. 1 Sampai 10 (Top 10) Minimum Mentori 5 Orang Titanium / Titanium Star<br/>Grup Member Lama Anda, Yang Upgrade Bulan Ini Ke Titanium / Titanium Star,<br/>Juga Terhitung Dalam Akumulasi Promo Top 10 Mentor<br/>Promo Top 10 Mentor Ini Berakhir Tanggal 28 Februari 2021 Jam 23.59 WIB</p>',
       showCloseButton: true,
       showConfirmButton: false,
       customClass: 'swal-wide',
