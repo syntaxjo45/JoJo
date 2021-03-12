@@ -18,7 +18,7 @@
         }
 
         100% {
-            transform: translatey(40%);
+            transform: translatey(60%);
         }
 
     
@@ -29,8 +29,8 @@
         content:url("../img/illustrations/astro.png");
         position: absolute;
         float: left;
-        left: 25%;
-        width: 450px;
+        left: 35%;
+        width: 250px;
         transform: translatey(-100px);
         animation: float 10s ease-in-out infinite;
     }

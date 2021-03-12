@@ -1,0 +1,108 @@
+@media (min-width:320px)  { 
+  
+}
+
+@media (min-width:481px)  { 
+
+
+}
+
+@media (min-width:641px)  { 
+
+.region {
+    fill: rgba(221, 226, 226, 0.89);
+    stroke: rgb(70, 66, 66);
+}
+path#XMLID_6_ {
+  stroke:gray;
+  fill:transparent;
+}
+.region:hover {
+    fill: #70efbe;
+    stroke:rgb(85, 83, 83);
+    cursor:pointer;
+}
+svg{
+  margin-top: 50px;
+  padding: 70px;
+  width: 750px;
+  height: 750px;
+  transition:1s;
+}
+
+#map{
+  height:450px;
+  margin:auto;
+  position:relative;
+  
+}
+.town{
+  position:absolute;
+}
+.town_name{
+  text-align:center;
+  width:100px;
+  height:30px;
+  
+  border-radius:20px;
+  position:relative;
+  color:white;
+  font-size:13px;
+  right: 200px;
+  font-family: 'Orbitron', cursive;
+}
+
+.right > .town_name:after{
+  content:"";
+   
+  position:absolute;
+  bottom:15px;
+  right: 100px;
+  border-radius:50%;
+ 
+  background:rgba(255, 152, 0, 0.39);
+   box-shadow: 0px 0px 2px 1px rgba(255, 152, 0, 0.39);
+  animation: pulsating 1s infinite;
+}
+@keyframes pulsating {
+ 0% {} 
+  100% {box-shadow: 0px 0px 0px 15px rgba(255, 152, 0, 0.139);}
+}
+
+.t_name{
+  background:rgba(33, 150, 243, 0.36);
+  width:100px;
+  right: 200px;
+}
+.t_name:before{
+  position: absolute;
+    top: -5px;
+    left: 8px;
+  animation:hide_show 1s infinite linear;
+  right: 200px;
+}
+.t_name:after{
+  position: absolute;
+    bottom: -10px;
+    left: 8px;
+ animation:hide_show 1s infinite linear;
+ right: 200px;
+
+}
+
+}
+
+@media (min-width:961px)  { 
+  
+
+}
+
+@media (min-width:1025px)  { 
+  
+
+}
+
+@media (min-width:1281px)  { 
+  
+
+}

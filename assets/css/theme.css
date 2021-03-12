@@ -91,6 +91,17 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: #272D4E;
 }
 
+@media (min-width:641px)  { 
+
+#vave {
+  background: -webkit-linear-gradient(45deg, #18e09b, #0dc8dd 80%); -webkit-background-clip: text;     -webkit-text-fill-color: transparent;
+}
+
+#whyus {
+  margin-top: -75px;
+}
+
+}
 h1, .h1 {
   font-size: calc(1.37383rem + 1.48598vw);
 }
@@ -4784,6 +4795,7 @@ fieldset:disabled .btn {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  padding-top: 0px;
 }
 
 .navbar-toggler {
