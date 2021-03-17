@@ -3,7 +3,7 @@
 @media (min-width:320px)  { 
     @keyframes float {
         0% {
-            transform: translatey(90%);
+            transform: translatey(70%);
         }
         
         25% {
