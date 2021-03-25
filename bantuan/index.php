@@ -33,24 +33,6 @@
       margin: 0 auto;
     }
 
-    button#back2top {
-      position: fixed;
-      right: 2%;
-      bottom: 2%;
-      opacity: 0;
-      visibility: hidden;
-
-      /*For better looking button*/
-      font-family: sans-serif;
-      font-size: 5px;
-      line-height: 1.3;
-      border-radius: 50%;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      padding: 10px 18px;
-      margin: 0;
-    }
 
     .MultiCarousel {
       float: left;
@@ -414,7 +396,7 @@
   <link href="../assets/css/theme.css" rel="stylesheet" />
   <link href="../assets/css/program.css" rel="stylesheet" />
   <link href="../assets/css/bantuan.css" rel="stylesheet" />
-  <link href="../assets/css/flip-jo.css" rel="stylesheet" />
+  <link href="../assets/css/card.css" rel="stylesheet" />
   <link href="../assets/css/accordion.css" rel="stylesheet" />
   <link href="../assets/css/popup.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -439,7 +421,7 @@
             <li class="nav-item"><a class="nav-link fw-bold" href="../index.php">Home</a></li>
             <li class="nav-item"><a class="nav-link fw-bold" href="../about-us">Tentang Kami</a></li>
             <li class="nav-item"><a class="nav-link fw-bold" href="../layanan">Layanan Kami</a></li>
-            <li class="nav-item"><a class="nav-link fw-bold active" aria-current="page" href="../help">Pusat Bantuan</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold active" aria-current="page" href="#">Pusat Bantuan</a></li>
           </ul>
           <form style="text-align: center;"><a class="btn btn-light rounded-pill shadow fw-bold first" id="testeSWAL" role="button">
               <li class="fa fa-button"></li><i class="fas fa-trophy"></i> Top Mentor Titanium
@@ -453,89 +435,68 @@
 
 
     <section class="py-6">
-      <div class="container">
+      <div class="container-lg">
         <div class="row">
           <div class="col-12">
             <div class="row flex-center mb-5">
-              <div class="col-auto text-center my-4">
-                <h1 class="mb-4 fw-bold">Pusat Bantuan</h1>
-                <p><i class="fas fa-question-circle fa-2x"></i></p>
+              <div class="col-md text-center my-4">
+                <div id="bgAbt-Us"></div>
+                <h1 class="mb-4 fw-bold">Apa yang bisa kami bantu?</h1>
               </div>
             </div>
-            <div class="row g-0 align-items-center" style="margin: 5%;">
-              <div class="col-sm text-center text-md-center">
-                <img src="../assets/img/adress.png"></img>
-                <br />
-                <h3 style="font-type: bold; font-family: Times New Roman;">
-                  Alamat Kantor
-                </h3>
-                <p>
-                  Griya Bakoel Rollas
-                  Jl. Taman Bintaro Raya no 8
-                  Jakarta Selatan - Indonesia
-                </p>
+
+
+            <div class="card bg-soft-success rounded-3">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-5 col-lg-6 text-md-center">
+                  <br />
+                  <div class="center">
+                    <div class="property-card">
+                      <a href="#">
+                        <div class="property-image">
+                          <div class="property-image-title">
+                            <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                          </div>
+                        </div>
+                      </a>
+                      <div class="property-description">
+                        <h5> Card Title </h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+                      </div>
+                      <a href="#">
+                        <div class="property-social-icons">
+                          <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7 col-lg-6 px-md-2 px-xl-6 text-center text-md-start">
+                  <div class="card-body px-4 py-5 p-lg-3 p-md-4">
+                    <ul>
+                      <p class="card-text" style="font-size: 1em;">
+                        <li>Meningkatkan Kesejahteraan Masyarakat Indonesia Secara Bersama Dalam Komunitas</li><br>
+                        <li>Memberikan Peluang Dan Kemudahan Dalam Berwirausaha Bagi Setiap Anggota</li><br>
+                        <li>Menjadikan Komunitas Sebagai Pilar Ekonomi Bersama</li><br>
+                        <li>Meningkatkan Peran Serta Komunitas Dalam Kegiatan Sosial Bersama</li><br>
+                        <li>Meningkatkan Keadilan Dalam Berusaha Kepada Masyarakat Luas</li>
+                        <li>Meningkatkan Kesejahteraan Masyarakat Indonesia Secara Bersama Dalam Komunitas</li><br>
+                        <li>Memberikan Peluang Dan Kemudahan Dalam Berwirausaha Bagi Setiap Anggota</li><br>
+                        <li>Menjadikan Komunitas Sebagai Pilar Ekonomi Bersama</li><br>
+                        <li>Meningkatkan Peran Serta Komunitas Dalam Kegiatan Sosial Bersama</li><br>
+                        <li>Meningkatkan Keadilan Dalam Berusaha Kepada Masyarakat Luas</li>
+                      </p>
+                    </ul>
+                  </div>
+                </div>
               </div>
-
-              <div class="col-sm text-center text-md-center">
-                <img src="../assets/img/whatsapp.png"></img>
-                <br />
-                <h3 style="font-type: bold; font-family: Times New Roman;">
-                  WA Only
-                </h3>
-                <a href="https://wa.me/621282006797/?text=Halo,Saya Membutuhkan Bantuan Penjelasan Mengenai Member Terima kasih">
-                  <p>Member : +62 896 0409 4949</p>
-                </a>
-              </div>
-
-              <div class="col-sm text-center text-md-center">
-                <img src="../assets/img/email.png"></img>
-                <br />
-                <h3 style="font-type: bold; font-family: Times New Roman;">
-                  E-Mail
-                </h3>
-                <p>member@vave.co.id<br />merchant@vave.co.id</p>
-
-              </div>
-
-
             </div>
-
-
           </div>
-        </div>
-
-    </section>
-
-
-
-    <section class="py-6">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="row flex-center">
-              <div class="col-auto text-center my-4">
-                <h1 class="mb-4 fw-bold">FAQ</h1>
-                <p>Pertanyaan Seputar Member Dan Merchant</p>
-              </div>
-            </div>
-            <div class="row g-0 align-items-center">
-              <div class="align-items-center">
-                <center>
-                  <a class="btn btn-light rounded-pill shadow fw-bold" href="https://vaveglobal.zendesk.com/hc/id" role="button">Lebih detail
-                    <svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#79bb86" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                    </svg></a>
-                </center>
-              </div>
-            </div>
-
-          </div>
-
-
         </div>
       </div>
 
     </section>
+
 
     <section class="Accordion">
       <div class="container">
@@ -666,12 +627,6 @@
     <p style="font-size: 1.75vh; color: black;">© 2021 - Vaveglobal | Adalah Merek Milik PT Vave Global Madani</p>
   </div>
   <!-- end of source -->
-  <button id="back2top"><img src="../assets/img/arrow-up.png"></img></button>
-  <script src="../assets/js/back2top.min.js"></script>
-  <script>
-    const button = document.querySelector("#back2top");
-    BACK2TOP(button, 50);
-  </script>
 
   <script src="../vendors/@popperjs/popper.min.js"></script>
   <script src="../vendors/bootstrap/bootstrap.min.js"></script>

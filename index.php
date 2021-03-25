@@ -41,7 +41,7 @@
     .footer {
       position: relative;
       left: 0;
-      bottom: 0 width: 100%;
+      bottom: 0; width: 100%;
       background-color: #dedee5;
       color: white;
       text-align: center;
@@ -55,25 +55,6 @@
     .container {
       width: 960px;
       margin: 0 auto;
-    }
-
-    button#back2top {
-      position: fixed;
-      right: 2%;
-      bottom: 2%;
-      opacity: 0;
-      visibility: hidden;
-
-      /*For better looking button*/
-      font-family: sans-serif;
-      font-size: 5px;
-      line-height: 1.3;
-      border-radius: 50%;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      padding: 10px 18px;
-      margin: 0;
     }
 
     .swal-wide {
@@ -385,13 +366,8 @@
 
   </main>
   <!-- end of source -->
-  <button id="back2top"><img src="assets/img/arrow-up.png"></img></button>
-  <script src="assets/js/back2top.min.js"></script>
+
   <script>
-    const button = document.querySelector("#back2top");
-    BACK2TOP(button, 50);
-
-
     function TestSweetAlert() {
       Swal.fire({
         html: '<div style="text-align: left; font-weight: bold; font-size: 1.5em;">Top Mentor Titanium</div><br/><div class="frameatas"><iframe class="responsive-frameatas align-center" src="https://mobapp.vave.co.id/contest_februari.php"></iframe></div> <br/> <h1>SYARAT & KETENTUAN:</h1><p> Pemenang No. 1 Sampai 10 (Top 10) Minimum Mentori 5 Orang Titanium / Titanium Star<br/>Grup Member Lama Anda, Yang Upgrade Bulan Ini Ke Titanium / Titanium Star,<br/>Juga Terhitung Dalam Akumulasi Promo Top 10 Mentor<br/>Promo Top 10 Mentor Ini Berakhir Tanggal 28 Februari 2021 Jam 23.59 WIB</p>',

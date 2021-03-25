@@ -26,25 +26,6 @@
       margin: 0 auto;
     }
 
-    button#back2top {
-      position: fixed;
-      right: 2%;
-      bottom: 2%;
-      opacity: 0;
-      visibility: hidden;
-
-      /*For better looking button*/
-      font-family: sans-serif;
-      font-size: 5px;
-      line-height: 1.3;
-      border-radius: 50%;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      padding: 10px 18px;
-      margin: 0;
-    }
-
     .MultiCarousel {
       float: left;
       overflow: hidden;
@@ -313,12 +294,7 @@
     <p style="font-size: 1.75vh; color: black;">© 2021 - Vaveglobal | Adalah Merek Milik PT Vave Global Madani</p>
   </div>
   <!-- end of source -->
-  <button id="back2top"><img src="../assets/img/arrow-up.png"></img></button>
-  <script src="../assets/js/back2top.min.js"></script>
-  <script>
-    const button = document.querySelector("#back2top");
-    BACK2TOP(button, 50);
-  </script>
+
 
   <script src="../vendors/@popperjs/popper.min.js"></script>
   <script src="../vendors/bootstrap/bootstrap.min.js"></script>
